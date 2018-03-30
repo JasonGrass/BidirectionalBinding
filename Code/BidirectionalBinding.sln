@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BidirectionalBindingDemo", "BidirectionalBindingDemo\BidirectionalBindingDemo.csproj", "{226E1A72-34EF-401A-A9AB-1A17D2B921B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BidirectionalBinding", "BidirectionalBinding\BidirectionalBinding.csproj", "{D9359F40-9E83-499F-8C92-77473D44FBEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{226E1A72-34EF-401A-A9AB-1A17D2B921B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226E1A72-34EF-401A-A9AB-1A17D2B921B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226E1A72-34EF-401A-A9AB-1A17D2B921B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226E1A72-34EF-401A-A9AB-1A17D2B921B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9359F40-9E83-499F-8C92-77473D44FBEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9359F40-9E83-499F-8C92-77473D44FBEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9359F40-9E83-499F-8C92-77473D44FBEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9359F40-9E83-499F-8C92-77473D44FBEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81D3287B-8608-4D60-B6FD-64F9F09822EE}
+	EndGlobalSection
+EndGlobal

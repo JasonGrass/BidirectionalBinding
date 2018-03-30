@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using BidirectionalBinding;
+using BidirectionalBindingDemo.ViewModel;
+
+namespace BidirectionalBindingDemo
+{
+    /// <summary>
+    /// MainWindow.xaml 的交互逻辑
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        MiaoViewModel miaoViewModel;
+        WangViewModel wangViewModel;
+
+        public MainWindow()
+        {
+            InitializeComponent();
+            Loaded += OnLoaded;
+        }
+
+        private void OnLoaded(object sender, RoutedEventArgs routedEventArgs)
+        {
+            miaoViewModel = new MiaoViewModel()
+            {
+                Lord = "Na"
+            };
+            wangViewModel = new WangViewModel();
+
+            MiaoPanel.DataContext = miaoViewModel;
+            WangPanel.DataContext = wangViewModel;
+
+
+
+            BidirectionalBindingOperations.SetBinding(
+                miaoViewModel, nameof(miaoViewModel.Lord),
+                wangViewModel, nameof(wangViewModel.Host));
+
+
+            BidirectionalBinding.BidirectionalBinding binding = new BidirectionalBinding.BidirectionalBinding(miaoViewModel, nameof(miaoViewModel.MiaoAge))
+            {
+                ValueConverter = new IntToStringClrConverter()
+            };
+            BidirectionalBindingOperations.SetBinding(wangViewModel, nameof(wangViewModel.WangAge), binding);
+
+        }
+    }
+}
