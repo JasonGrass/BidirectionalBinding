@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BidirectionalBinding
+namespace Jgrass.Tools.Binding
 {
 
     public interface IClrValueConverter

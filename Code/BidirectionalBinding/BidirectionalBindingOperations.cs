@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BidirectionalBinding
+namespace Jgrass.Tools.Binding
 {
     /// <summary>
     /// CLR 双向绑定操作

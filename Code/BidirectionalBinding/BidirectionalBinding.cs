@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace BidirectionalBinding
+namespace Jgrass.Tools.Binding
 {
     /// <summary>
     /// 实现两个 CLR 属性的双向绑定

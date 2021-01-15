@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using BidirectionalBinding;
+using Jgrass.Tools.Binding;
 using BidirectionalBindingDemo.ViewModel;
 
 namespace BidirectionalBindingDemo
@@ -49,7 +49,7 @@ namespace BidirectionalBindingDemo
                 wangViewModel, nameof(wangViewModel.Host));
 
 
-            BidirectionalBinding.BidirectionalBinding binding = new BidirectionalBinding.BidirectionalBinding(miaoViewModel, nameof(miaoViewModel.MiaoAge))
+            Jgrass.Tools.Binding.BidirectionalBinding binding = new Jgrass.Tools.Binding.BidirectionalBinding(miaoViewModel, nameof(miaoViewModel.MiaoAge))
             {
                 ValueConverter = new IntToStringClrConverter()
             };
